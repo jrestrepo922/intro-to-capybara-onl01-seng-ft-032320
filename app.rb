@@ -5,5 +5,7 @@ class Application < Sinatra::Base
   end 
   
   # Root that responds to the form submission 
-  
+  post '/greet' do 
+    erb :greet 
+  end 
 end
